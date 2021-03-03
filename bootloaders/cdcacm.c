@@ -43,19 +43,18 @@
 // The PIDs must be used with VID 0403.
 // We use A660; Cale Fallgatter uses A661; Jim Donelson uses A667;
 // Avrbootloader group (this project) uses A662.
-//#define CDCACM_VID  0x0403
-//#define CDCACM_PID  0xA662
-//#define CDCACM_RID  0x0180
 
-#define CDCACM_VID  0x04D8      //MICROCHIP
-#define CDCACM_PID  0xE9E1      //FLINDUINO
-#define CDCACM_RID  0x0100      //VERSION 1.0
-
-#define USBManufacturerLen  16
-#define USBManufacturer     'F', 0, 'l', 0, 'i', 0, 'n', 0, 'd', 0, 'e', 0, 'r', 0, 's', 0
-#define USBProductLen       18
-#define USBProduct          'F', 0, 'l', 0, 'i', 0, 'n', 0, 'd', 0, 'u', 0, 'i', 0, 'n', 0, 'o', 0
-
+#if (!defined(CDCACM_VID))
+    #define CDCACM_VID  0x0403
+#endif
+#if (!defined(CDCACM_PID))
+    #define CDCACM_PID  0xA662
+#endif
+#if (!defined(CDCACM_RID))
+    #define CDCACM_RID  0x0180
+#endif
+  
+    
 static const byte cdcacm_device_descriptor[] = {
     18,  // length
     0x01,  // device descriptor

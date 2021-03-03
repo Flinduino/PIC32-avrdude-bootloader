@@ -6,8 +6,6 @@
 
 #if defined(PUT_CONFIG_BITS_HERE)
 
-
-
     //* Oscillator Settings
     #pragma config FNOSC    = PRIPLL                                // Oscillator selection
     #pragma config POSCMOD  = XT                                    // Primary oscillator mode
@@ -77,5 +75,14 @@
 
     #define FLASH_BYTES                 (0x20000-0x1000)		    // Leave room 4 pages (for bootloader!)
     #define FLASH_PAGE_SIZE             1024                                // In bytes
+       
+#define CDCACM_VID  0x04D8      //MICROCHIP
+#define CDCACM_PID  0xE9E1      //FLINDUINO
+#define CDCACM_RID  0x0100      //VERSION 1.0
+
+#define USBManufacturerLen  16
+#define USBManufacturer     'F', 0, 'l', 0, 'i', 0, 'n', 0, 'd', 0, 'e', 0, 'r', 0, 's', 0
+#define USBProductLen       18
+#define USBProduct          'F', 0, 'l', 0, 'i', 0, 'n', 0, 'd', 0, 'u', 0, 'i', 0, 'n', 0, 'o', 0
 
 #endif
