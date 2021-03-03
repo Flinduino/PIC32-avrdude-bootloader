@@ -88,6 +88,7 @@
 #define     vendMikroE          0x000B
 #define     vendBoxtec          0x000C
 #define     vendExperimental    0x8000
+#define     vendFlinduino       0x000D
 
 #define     prodUnassigned      0xFFFF
 
@@ -145,6 +146,7 @@
 #include "configs/pontech.h"
 #include "configs/schmalzhaus.h"
 #include "configs/boxtec.h"
+#include "configs/flinduino.h"
 
 #ifndef _CONFIG_VALID_
     #error    Board/CPU combination not defined

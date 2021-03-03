@@ -193,3 +193,10 @@ CND_ARTIFACT_PATH_MICROCHIP_MZ_STARTER_KIT=dist/MICROCHIP_MZ_STARTER_KIT/product
 CND_PACKAGE_DIR_MICROCHIP_MZ_STARTER_KIT=${CND_DISTDIR}/MICROCHIP_MZ_STARTER_KIT/package
 CND_PACKAGE_NAME_MICROCHIP_MZ_STARTER_KIT=chipkit-bootloaders.x.tar
 CND_PACKAGE_PATH_MICROCHIP_MZ_STARTER_KIT=${CND_DISTDIR}/MICROCHIP_MZ_STARTER_KIT/package/chipkit-bootloaders.x.tar
+# Flinduino configuration
+CND_ARTIFACT_DIR_Flinduino=dist/Flinduino/production
+CND_ARTIFACT_NAME_Flinduino=chipKIT-Bootloaders.X.production.hex
+CND_ARTIFACT_PATH_Flinduino=dist/Flinduino/production/chipKIT-Bootloaders.X.production.hex
+CND_PACKAGE_DIR_Flinduino=${CND_DISTDIR}/Flinduino/package
+CND_PACKAGE_NAME_Flinduino=chipkit-bootloaders.x.tar
+CND_PACKAGE_PATH_Flinduino=${CND_DISTDIR}/Flinduino/package/chipkit-bootloaders.x.tar
